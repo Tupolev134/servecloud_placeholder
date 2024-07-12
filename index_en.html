@@ -1,59 +1,74 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>ServeCloud</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
             position: relative;
+            color: white;
+            background-image: url('ServeCloud_Wallpaper.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
         }
         h1 {
-            color: #333;
+            color: white;
         }
         .logo {
-            max-width: 300px;
+            max-width: 200px;
             height: auto;
         }
         .lang-switch {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 30px;
+            right: 30px;
         }
         .lang-switch a {
             text-decoration: none;
-            color: #333;
+            color: white;
+            margin-left: 10px;
         }
         .client-login {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 30px;
+            left: 30px;
         }
-        .border {
+        .client-login a, .lang-switch a {
             text-decoration: none;
-            color: #333;
-            border: 1px solid #333;
+            color: white;
+            border: 1px solid white;
             padding: 5px 10px;
             border-radius: 3px;
+        }
+        .content {
+            margin-top: 40px;
+            background-color: rgba(9, 9, 17, 0.63);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
 <div class="client-login">
-    <a class="border" href="https://app.capcade.com/#/p/welcome/servecloud">Client Login</a>
+    <a href="https://app.capcade.com/#/p/welcome/servecloud">Client Login</a>
 </div>
 
 <div class="lang-switch">
-    <a class="border" href="index.html">DE</a>
-    <a href="#">/</a>
-    <a class="border" href="index_en.html">EN</a>
+    <a href="index.html">DE</a> / <a href="index_en.html">EN</a>
 </div>
 
-<h1>Thank you for your visit!</h1>
-<p>We are currently revamping our website. Please check back soon!</p>
-<img src="./Logo_farbig_Verlauf_Bild_links.png" alt="ServeCloud Inc. Logo" class="logo">
+<div class="content">
+    <h1>Thank you for your visit!</h1>
+    <p>We are currently revamping our website. Please check back soon!</p>
+</div>
 </body>
 </html>
